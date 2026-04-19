@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    
+}
+h1{
+    background-color: #943c22;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 5rem;
+    line-height: 5rem;
+}
+.choice{
+    width: 10rem;
+    height: 10rem;
+}
+
+img{
+    width: 10rem;
+    height: 10rem;
+}
