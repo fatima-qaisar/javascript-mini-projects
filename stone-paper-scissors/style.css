@@ -5,7 +5,7 @@
     
 }
 h1{
-    background-color: #943c22;
+    background-color: #1f0202;
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     height: 5rem;
@@ -14,9 +14,55 @@ h1{
 .choice{
     width: 10rem;
     height: 10rem;
+    border-radius: 50%;
+   
 }
 
 img{
-    width: 10rem;
-    height: 10rem;
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
 }
+
+.choices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 5rem;
+}
+
+.choice:hover{ /* another way is to make opacity half upon hover */
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+
+.score-board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    gap: 5rem;
+    margin-top: 2rem;
+}
+
+#user-score, #computer-score{
+    font-weight: bold;
+    color: #000000;
+}
+.message-container{
+    margin-top: 5rem;
+}
+
+#message{
+    display: inline;
+    background-color: #ffadad;
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+    padding: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 1.5rem;
+}
+
