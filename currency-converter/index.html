@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currency Converter</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="container">
@@ -16,7 +17,7 @@
             </div>
             <div class="drop-down">
                 <div class="from">
-                    <p>From: </p>
+                    <p>From:</p>
                     <div class="select-container">
                         <img src="https://flagsapi.com/US/flat/64.png">
                         <select name="from">
@@ -26,12 +27,12 @@
                             <option value="AUD">AUD</option>
                             <option value="CAD">CAD</option>
                             <option value="JPY">JPY</option>
-
                         </select>
                     </div>
                 </div>
+            <i class="fa-solid fa-arrow-right-arrow-left"></i>
                 <div class="to">
-                    <p>To: </p>
+                    <p>To:</p>
                     <div class="select-container">
                         <img src="https://flagsapi.com/PK/flat/64.png">
                         <select name="to">
@@ -45,6 +46,8 @@
                     </div>
                 </div>
             </div>
+            <div class="msg">1USD = 278.74 PKR</div>
+            <button>Get Exchange Rate</button> <!--Default behavior of form is to submit and refresh the page. So, clicking the button is going to work as form submission.-->
         </form>
     </div>
     <script src="app.js"></script>
