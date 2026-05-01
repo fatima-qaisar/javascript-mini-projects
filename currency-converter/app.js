@@ -52,7 +52,7 @@ const updateExchangeRate = async () => {
         return;
     }
     const URL=`${BASE_URL}/${fromCurr.value.toLowerCase()}.json`;
-    let response= await fetch(URL);
+    let response= await fetch(URL, { cache: "no-store" });
     //console.log(response);
     let data = await response.json();
     //console.log(data);
