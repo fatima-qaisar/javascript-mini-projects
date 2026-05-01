@@ -13,21 +13,14 @@
         <form>
             <div class="amount">
                 <p>Enter Amount: </p>
-                <input value="100" type="text"/>
+                <input name="amount" value="1" type="text"/>
             </div>
             <div class="drop-down">
                 <div class="from">
                     <p>From:</p>
                     <div class="select-container">
                         <img src="https://flagsapi.com/US/flat/64.png">
-                        <select name="from">
-                            <option value="USD">USD</option>
-                            <option value="EUR">EUR</option>
-                            <option value="PKR">PKR</option>
-                            <option value="AUD">AUD</option>
-                            <option value="CAD">CAD</option>
-                            <option value="JPY">JPY</option>
-                        </select>
+                        <select name="from"></select>
                     </div>
                 </div>
             <i class="fa-solid fa-arrow-right-arrow-left"></i>
@@ -35,21 +28,15 @@
                     <p>To:</p>
                     <div class="select-container">
                         <img src="https://flagsapi.com/PK/flat/64.png">
-                        <select name="to">
-                            <option value="USD">USD</option>
-                            <option value="EUR">EUR</option>
-                            <option value="PKR" selected>PKR</option>
-                            <option value="AUD">AUD</option>
-                            <option value="CAD">CAD</option>
-                            <option value="JPY">JPY</option>
-                        </select>
+                        <select name="to"></select>
                     </div>
                 </div>
             </div>
-            <div class="msg">1USD = 278.74 PKR</div>
-            <button>Get Exchange Rate</button> <!--Default behavior of form is to submit and refresh the page. So, clicking the button is going to work as form submission.-->
+            <div class="msg">1 USD = 278.75 PKR</div>
+            <button id="btn">Get Exchange Rate</button> <!--Default behavior of form is to submit and refresh the page. So, clicking the button is going to work as form submission.-->
         </form>
     </div>
+    <script src="currency-codes.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
